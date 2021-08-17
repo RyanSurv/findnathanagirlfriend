@@ -1,0 +1,275 @@
+:root {
+  --color-primary: #0d6efd;
+  --color-primary-dark: #003fd8;
+  --color-off-white: #ebedf0;
+  --color-light-gray: #b1b8cc;
+  --color-light-gray-2: #e4e5e8;
+  --color-gray: #4d4d4d;
+  --color-dark: #111;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 5.8rem;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 160rem;
+  margin: auto;
+}
+.container-medium {
+  width: 100%;
+  max-width: 140rem;
+  margin: auto;
+}
+
+.button {
+  background-color: var(--color-off-white);
+  color: var(--color-primary);
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--color-off-white);
+    background-color: var(--color-primary-dark);
+    transition: all 0.2s;
+  }
+
+  &-circle {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hero {
+  color: white;
+  background-color: var(--color-primary);
+  height: 100vh;
+  background-image: url('./assets/images/nathy.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    color: var(--color-off-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i:hover,
+    &_logo:hover {
+      cursor: pointer;
+    }
+  }
+
+  &_column_info {
+    max-width: 60rem;
+
+    h1 {
+      font-size: 8rem;
+      margin-bottom: 4rem;
+    }
+    p {
+      line-height: 3.8rem;
+    }
+    .hero_cta {
+      display: flex;
+      align-items: center;
+      margin-top: 4rem;
+
+      &:hover > button {
+        cursor: pointer;
+        color: var(--color-off-white);
+        background-color: var(--color-primary-dark);
+        transition: all 0.2s;
+      }
+
+      p {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .button {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .hero_features {
+    text-align: center;
+
+    &_features {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #8caeff;
+    }
+  }
+}
+
+.about {
+  background-color: var(--color-off-white);
+  padding: 12rem 0;
+
+  &_description {
+    font-size: 1.6rem;
+    color: var(--color-gray);
+    line-height: 28px;
+  }
+
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .column {
+      &:not(:first-child) {
+        margin-left: 16rem;
+      }
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 4rem;
+  }
+}
+
+.features {
+  padding: 12rem;
+
+  &_head {
+    text-align: center;
+
+    h3 {
+      font-size: 4.2rem;
+    }
+
+    p {
+      margin: auto;
+      margin-top: 2rem;
+      max-width: 62rem;
+    }
+  }
+
+  &_features {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4rem;
+
+    &_feature {
+      padding: 4rem;
+      border: 1px solid var(--color-light-gray-2);
+      border-radius: 1rem;
+
+      i {
+        font-size: 4rem;
+        color: var(--color-primary);
+        margin-bottom: 4rem;
+      }
+
+      h3 {
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+      }
+    }
+  }
+}
+
+.match {
+  background-color: var(--color-off-white);
+  padding: 12rem;
+
+  &_head {
+    text-align: center;
+
+    h3 {
+      font-size: 4.2rem;
+    }
+
+    p {
+      margin: auto;
+      margin-top: 2rem;
+      max-width: 62rem;
+    }
+  }
+
+  &_list {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+
+    li {
+      border-radius: 500rem;
+      padding: 1rem 8rem;
+      display: inline;
+      border: 1px solid var(--color-light-gray);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      i {
+        color: var(--color-primary-dark);
+      }
+
+      p {
+        margin-left: 4rem;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: var(--color-dark);
+  padding: 4rem 0;
+  color: var(--color-off-white);
+}
