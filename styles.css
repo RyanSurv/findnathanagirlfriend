@@ -190,6 +190,10 @@ body {
   line-height: 28px;
 }
 
+.about .column {
+  min-width: 20rem;
+}
+
 .about .columns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,7 +216,7 @@ body {
 }
 
 .features {
-  padding: 12rem;
+  padding: 12rem 0;
 }
 
 .features_head {
@@ -235,8 +239,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
   grid-gap: 4rem;
 }
 
@@ -264,7 +266,7 @@ body {
 
 .match {
   background-color: var(--color-off-white);
-  padding: 12rem;
+  padding: 12rem 0;
 }
 
 .match_head {
@@ -319,5 +321,87 @@ footer {
   background-color: var(--color-dark);
   padding: 4rem 0;
   color: var(--color-off-white);
+}
+
+@media only screen and (max-width: 1400px) {
+  .container,
+  .container-medium {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero {
+    text-align: center;
+  }
+  .hero_column_info {
+    margin: auto;
+  }
+  .hero_cta {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .match_list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero {
+    background-size: cover;
+  }
+  .hero_column_info h1 {
+    font-size: 6.4rem;
+  }
+  .hero_column_info p {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+  .about .columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .columns .column:not(:first-child) {
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+  .features_features {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .features_features_feature {
+    text-align: center;
+  }
+  .match_list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    background-size: cover;
+    background-position: left;
+  }
+  .hero_column_info h1 {
+    font-size: 4.8rem;
+  }
+  .hero_column_info p {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+  .hero_features h3 {
+    font-size: 1.8rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
