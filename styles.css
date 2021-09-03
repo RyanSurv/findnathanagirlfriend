@@ -441,16 +441,19 @@ footer h4 {
   margin-top: 2rem;
 }
 
-footer span {
+footer span,
+footer a {
   text-decoration: underline;
   color: var(--color-primary);
 }
 
-footer span:hover {
+footer span:hover,
+footer a:hover {
   cursor: pointer;
 }
 
-footer #ryanH4 {
+footer #ryanH4,
+footer #ryanH42 {
   margin-top: 2rem;
 }
 

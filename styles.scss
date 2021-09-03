@@ -386,7 +386,8 @@ footer {
     margin-top: 2rem;
   }
 
-  span {
+  span,
+  a {
     text-decoration: underline;
     color: var(--color-primary);
 
@@ -395,7 +396,8 @@ footer {
     }
   }
 
-  #ryanH4 {
+  #ryanH4,
+  #ryanH42 {
     margin-top: 2rem;
   }
 }

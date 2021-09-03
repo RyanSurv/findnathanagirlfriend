@@ -12,6 +12,9 @@ const heart = document.getElementById('heart');
 const ryan = document.getElementById('ryan');
 const ryanH4 = document.getElementById('ryanH4');
 
+const ryan2 = document.getElementById('ryan2');
+const ryanH42 = document.getElementById('ryanH42');
+
 const originalH1 = document.getElementById('originalH1');
 const newH1 = document.getElementById('newH1');
 
@@ -30,4 +33,8 @@ heart.addEventListener('click', () => {
 
 ryan.addEventListener('click', () => {
   ryanH4.style.display = 'block';
+});
+
+ryan2.addEventListener('click', () => {
+  ryanH42.style.display = 'block';
 });
