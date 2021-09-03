@@ -277,13 +277,26 @@ footer {
   padding: 4rem 0;
   color: var(--color-off-white);
 
-  p {
+  .text-hidden {
     color: #1b1b1b;
     font-size: 1.4rem;
   }
 
   h4 {
     color: #999;
+    margin-top: 2rem;
+  }
+
+  span {
+    text-decoration: underline;
+    color: var(--color-primary);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #ryanH4 {
     margin-top: 2rem;
   }
 }

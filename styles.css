@@ -324,13 +324,26 @@ footer {
   color: var(--color-off-white);
 }
 
-footer p {
+footer .text-hidden {
   color: #1b1b1b;
   font-size: 1.4rem;
 }
 
 footer h4 {
   color: #999;
+  margin-top: 2rem;
+}
+
+footer span {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+footer span:hover {
+  cursor: pointer;
+}
+
+footer #ryanH4 {
   margin-top: 2rem;
 }
 
