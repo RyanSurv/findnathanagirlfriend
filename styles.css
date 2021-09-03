@@ -323,6 +323,10 @@ footer {
   color: var(--color-off-white);
 }
 
+footer p {
+  color: #222;
+}
+
 @media only screen and (max-width: 1400px) {
   .container,
   .container-medium {
