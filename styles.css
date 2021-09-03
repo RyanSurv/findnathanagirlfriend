@@ -306,6 +306,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: right;
 }
 
 .match_list li i {
@@ -325,6 +326,11 @@ footer {
 
 footer p {
   color: #1b1b1b;
+}
+
+footer h4 {
+  color: #999;
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 1400px) {
