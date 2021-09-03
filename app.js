@@ -8,3 +8,16 @@ _____     _   _              _                     _ _ _              ___ ___ _
                                             |___|                                    
                                                                                                                                   
 `);
+
+const heart = document.getElementById('heart');
+const interested = document.getElementById('interested');
+let heartClicked = 0;
+
+heart.addEventListener('click', () => {
+  heartClicked++;
+
+  if (heartClicked > 9) {
+    console.log('here');
+    interested.style.display = 'block';
+  }
+});
